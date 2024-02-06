@@ -9,9 +9,11 @@ self.addEventListener("install", (event) => {
       "/",
       "/manifest.json",
       "/index.html",
-      "/index2.html",
       "/index.js",
+      "/index2.html",
       "/index2.js",
+      "/index3.html",
+      "/index3.js",
       "/test192.png",
     ]),
   );

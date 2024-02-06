@@ -24,3 +24,14 @@ if ('launchQueue' in window) {
     }
   });
 }
+
+window.onload = () => {
+  const index3button = document.getElementById('index3button');
+  const onButtonClick = () => {
+    console.log('in onButtonClick');
+    window.open('index3.html', 'namedpopupwindow', 'popup');
+  }
+  if (index3button) {
+    index3button.addEventListener('click', onButtonClick);
+  }
+}
