@@ -71,7 +71,7 @@ and click on the link.
 :x: Issue: The OS opens index2.html in a new Firefox tab instead of the existing opened PWA window.
 Same result as Scenario 4.
 
-## Test Scenarios for `window.open('index3.html', 'namedpopupwindow', 'popup');`
+## Test Scenarios for https://issues.chromium.org/issues/324108010 `window.open('index3.html', 'namedpopupwindow', 'popup');`
 
 Scenario 1: chrome://flags/#enable-user-link-capturing-pwa is set to "Default" (experiment disabled).
 Default web browser set to Chrome.
@@ -106,7 +106,7 @@ Default web browser set to Chrome.
 2. Open the 3-dots menu in the upper-right corner and click "Open in Chrome".
 3. Click the button to call `window.open('index3.html', 'namedpopupwindow', 'popup');`.
 
-:white_check_mark: Correct behavior: index3.html opens in a popup window with message "window.name: namedpopupwindow, has window.opener: true".
+:white_check_mark: Correct behavior: index3.html opens in a new PWA window with message "window.name: namedpopupwindow, has window.opener: true".
 
 ---
 
